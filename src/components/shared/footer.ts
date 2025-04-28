@@ -3,11 +3,11 @@ export function initializeFooter() {
     <footer class="footer mt-auto py-3" style="background-color: var(--footer-background)">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-10 text-center text-md-start">
-            <p class="mb-0 text-light text-center">Copyright &copy;2025 <span style="color: var(--brand-color)">Fleet Mucky Mayhem</span></p>
-            <p class="mb-0 text-light text-center">v2.0.0 Designed & Built by <span style="color: var(--brand-color)">The Spanish Mucky</span> and his Agentic Friends</p>
+          <div class="col-md-8 offset-md-2 text-center">
+            <p class="mb-0 text-light">Copyright &copy;2025 <span style="color: var(--brand-color)">Fleet Mucky Mayhem</span></p>
+            <p class="mb-0 text-light">v2.0.0 Designed & Built by <span style="color: var(--brand-color)">The Spanish Mucky</span> and his Agentic Friends</p>
           </div>
-          <div class="col-md-2 d-none d-md-block text-end">
+          <div class="col-md-2 text-end">
             <button 
               class="btn btn-link p-0" 
               id="backToTop" 
