@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Our valued sponsors and supporters" />
+    <title>FMM - Sponsors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      /* Critical CSS */
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      .sponsor-card {
+        background-color: var(--bs-body-bg);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .sponsor-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important;
+      }
+      .sponsor-title {
+        text-align: center;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 600;
+        color: var(--brand-color);
+        margin-bottom: 1rem;
+      }
+      .sponsor-divider {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--brand-color), transparent);
+        margin: 1.5rem 0;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="/src/utils/theme-init.ts"></script>
+    <main>
+      <div class="page-header">
+        <div class="container">
+          <h1>Sponsors</h1>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row mb-4">
+          <div class="col-md-8 mx-auto">
+            <p class="lead text-center">Our wonderful partners who support our cycling community and make our adventures possible. We're proud to be associated with these fantastic organizations.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card sponsor-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="sponsor-title">GearShift Dynamics</h2>
+                <div class="sponsor-divider"></div>
+                <p>Premier cycling equipment manufacturer specializing in high-performance bikes and customized gear. Their commitment to innovation has revolutionized how we experience trail riding, making them our trusted technical partner since 2023.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card sponsor-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="sponsor-title">Trail & Track Cafe</h2>
+                <div class="sponsor-divider"></div>
+                <p>Our favorite post-ride refueling station in Fleet! They've been keeping our cyclists energized with specially crafted energy-packed meals and the best coffee in Hampshire. Exclusive 15% discount for all FMM members.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card sponsor-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="sponsor-title">MudGuard Insurance</h2>
+                <div class="sponsor-divider"></div>
+                <p>Specialized cycling insurance provider offering comprehensive coverage for our adventures. Their unique understanding of cyclists' needs has made them the perfect partner for protecting our members and their beloved bikes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card sponsor-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="sponsor-title">EcoTrail Solutions</h2>
+                <div class="sponsor-divider"></div>
+                <p>Environmental consultancy helping us minimize our impact on nature. They've been instrumental in developing our sustainable trail maintenance programs and organizing our annual forest cleanup initiatives.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <div class="card sponsor-card shadow-sm h-100">
+              <div class="card-body p-4">
+                <h2 class="sponsor-title">WheelWorks Tech</h2>
+                <div class="sponsor-divider"></div>
+                <p>Local bicycle maintenance experts providing top-notch service to our community. Their mobile repair unit is always ready to assist during our group rides, ensuring everyone stays safe and rolling smoothly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
