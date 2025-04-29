@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A sociable and welcoming cycling group in Fleet (Hampshire) and beyond, exploring scenic routes along towpaths, country lanes, and gentle trails. Open to all—come and ride with us!"
+    />
+    <meta
+      name="keywords"
+      content="FleetMuckyMayhem, Fleet Mucky Mayhem Cycling group, Fleet Cycling group, Fleet Cycling Club, Fleet Towpath Cycling group"
+    />
+    <title>FMM - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      /* Critical CSS */
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      
+      /* Accordion Styles */
+      .rides-accordion {
+        --bs-accordion-btn-bg: transparent;
+        --bs-accordion-active-bg: rgba(255, 193, 7, 0.1);
+        --bs-accordion-active-color: var(--bs-body-color);
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+      }
+      
+      .accordion-button:not(.collapsed) {
+        font-weight: 600;
+      }
+      
+      .accordion-button::after {
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-button:hover {
+        background-color: rgba(255, 193, 7, 0.05) !important;
+      }
+      
+      .accordion-header .accordion-button i {
+        color: #FFC107;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-button:hover i {
+        transform: scale(1.1);
+      }
+      
+      .ride-category {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/main-BDePYkGQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-E4Wdb9tq.css">
+  </head>
+  <body>
+    <main>
+      <div class="page-header">
+        <div class="container">
+          <div style="font-family: 'Urbanist', sans-serif;" class="display-4 mb-2">Welcome to</div>
+          <h1>Fleet Mucky Mayhem</h1>
+        </div>
+      </div>
+      
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="accordion rides-accordion" id="ridesAccordion">
+              <!-- Beginner Rides -->
+              <div class="accordion-item border-warning">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#beginnerRides" aria-expanded="false" aria-controls="beginnerRides">
+                    <i class="bi bi-stars"></i>
+                    <span class="ride-category">Beginner Rides:</span>
+                  </button>
+                </h2>
+                <div id="beginnerRides" class="accordion-collapse collapse" data-bs-parent="#ridesAccordion">
+                  <div class="accordion-body">
+                    <p>Perfect for those just starting their cycling journey! Join our friendly Saturday morning rides along the scenic Basingstoke Canal towpath. Easy pace, plenty of stops, and always ending with coffee and cake!</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Regular Rides -->
+              <div class="accordion-item border-warning">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regularRides" aria-expanded="false" aria-controls="regularRides">
+                    <i class="bi bi-bicycle"></i>
+                    <span class="ride-category">Regular Rides:</span>
+                  </button>
+                </h2>
+                <div id="regularRides" class="accordion-collapse collapse" data-bs-parent="#ridesAccordion">
+                  <div class="accordion-body">
+                    <p>Our bread and butter! Weekly Sunday morning adventures exploring the beautiful Hampshire countryside. Expect a mix of towpaths, country lanes, and gentle trails. Distance typically 20-30 miles at a sociable pace.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Longer Rides -->
+              <div class="accordion-item border-warning">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#longerRides" aria-expanded="false" aria-controls="longerRides">
+                    <i class="bi bi-geo-alt"></i>
+                    <span class="ride-category">Longer Rides:</span>
+                  </button>
+                </h2>
+                <div id="longerRides" class="accordion-collapse collapse" data-bs-parent="#ridesAccordion">
+                  <div class="accordion-body">
+                    <p>Monthly adventures for those seeking more challenge! These 40+ mile rides venture further afield, taking in varied terrain and new destinations. Don't worry - we always plan strategic café stops!</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Featured Ride -->
+              <div class="accordion-item border-warning">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featuredRide" aria-expanded="false" aria-controls="featuredRide">
+                    <i class="bi bi-trophy"></i>
+                    <span class="ride-category">Featured Ride:</span>
+                  </button>
+                </h2>
+                <div id="featuredRide" class="accordion-collapse collapse" data-bs-parent="#ridesAccordion">
+                  <div class="accordion-body">
+                    <p>Coming up: The Spring Equinox Special! Join us for a dawn-to-dusk adventure through the North Downs. Multiple distance options available, all ending with a celebratory meal at The Fox & Hounds.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Social Event -->
+              <div class="accordion-item border-warning">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#socialEvent" aria-expanded="false" aria-controls="socialEvent">
+                    <i class="bi bi-people"></i>
+                    <span class="ride-category">Social Event:</span>
+                  </button>
+                </h2>
+                <div id="socialEvent" class="accordion-collapse collapse" data-bs-parent="#ridesAccordion">
+                  <div class="accordion-body">
+                    <p>Monthly pub nights, maintenance workshops, and seasonal celebrations! Because cycling is about more than just riding - it's about the wonderful community we build together.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Welcome Text Section -->
+            <div class="welcome-section mt-5">
+              <div class="card border-warning">
+                <div class="card-body p-4">
+                  <h2 class="text-center mb-4" style="font-family: 'Urbanist', sans-serif; color: var(--brand-color);">Who We Are?</h2>
+                  <div class="row g-4">
+                    <div class="col-md-12">
+                      <p>We are a local group of social cyclists within the Fleet (Hampshire) and surrounding areas that enjoy off-road routes - Cross Country (XC), Adventure and Exploring type of rides, frequently along the local towpaths away from the traffic. We welcome new and experienced riders, whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs.</p>
+                      <p>These are very social rides, everyone helps and supports each other. These rides are just about getting out and riding, we don't care what you ride or what you wear!</p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-start">
+                        <i class="bi bi-bicycle text-warning me-3 mt-1" style="font-size: 1.4rem;"></i>
+                        <p class="mb-0"><strong>No bike, no problem!</strong><br>We have a couple of suitable Loan Bikes that we lend out if you wish to try out a ride.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-start">
+                        <i class="bi bi-tools text-warning me-3 mt-1" style="font-size: 1.4rem;"></i>
+                        <p class="mb-0"><strong>Need bike maintenance?</strong><br>We can often help with fixing/maintaining your bike to get you back in the saddle.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="card shadow-sm border-warning mt-5">
+              <div class="card-body text-center p-5">
+                <i class="bi bi-chat-dots-fill text-warning mb-3" style="font-size: 2.5rem;"></i>
+                <p class="card-text mb-4" style="font-size: 1.25rem;">Have questions about Fleet Mucky Mayhem? We're here to help!</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="/src/pages/faq/" class="btn btn-warning btn-lg px-4 py-3" style="width: 160px;">
+                    <i class="bi bi-question-circle-fill me-2"></i>FAQ
+                  </a>
+                  <a href="/src/pages/contact/" class="btn btn-warning btn-lg px-4 py-3" style="width: 160px;">
+                    <i class="bi bi-person-lines-fill me-2"></i>Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
